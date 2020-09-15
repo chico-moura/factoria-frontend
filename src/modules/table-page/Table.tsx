@@ -1,9 +1,9 @@
 import React from 'react'
 import './Table.css'
-import { Product } from '../../types'
+import { Produto } from '../../types'
 
 
-export default function Table(props: Product[]) {
+export default function Table(props: Produto[]) {
     return (
         <table>
             <tbody>
@@ -15,8 +15,8 @@ export default function Table(props: Product[]) {
                 {props.map(item =>
                     <tr key={item.id}>
                         <td>{item.id}</td>
-                        <td>{item.name}</td>
-                        <td>{item.price}</td>
+                        <td>{item.nome}</td>
+                        <td>{item.preco_compra}</td>
                     </tr>
                 )}
             </tbody>

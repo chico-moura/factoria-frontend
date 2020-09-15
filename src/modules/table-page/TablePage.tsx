@@ -1,13 +1,13 @@
 import React from 'react'
 import './TablePage.css'
 import Table from './Table'
-import { Product } from '../../types'
+import { Produto } from '../../types'
 
 
 interface TablePageProps {
     header: string,
     buttonRow: [],
-    tableContent: Product[],
+    tableContent: Produto[],
 
 }
 

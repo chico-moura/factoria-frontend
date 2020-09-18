@@ -1,0 +1,30 @@
+.nav-button {
+	position: relative;
+	float: left;
+	height: 22px;
+	padding: 10px 20px 12px 20px;
+	text-align: center;
+	vertical-align: middle;
+	color: #EEEEEE;
+	font-size: 17px; 
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.nav-button:hover {
+	background-color: #2e2e2e;
+	cursor: pointer;
+}
+
+.nav-button:hover .drop-down {
+	display: flex;
+}
+
+.nav-button:hover .nav-button .drop-down {
+	display: none;
+}
+
+.drop-down .nav-button:hover .drop-down{
+	display: flex;
+}
+

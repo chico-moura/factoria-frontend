@@ -1,6 +1,8 @@
-export default async function fetchData(url: string){
+import {Produto} from '../types'
+
+export default async function fetchData(url: string): Promise<Produto[]>{
     const response = await fetch(url)
-    const json = await response.json()
-    return json
+
+    return response.json()
 }
 

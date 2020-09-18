@@ -1,0 +1,29 @@
+.drop-down {
+	display: none;
+	position: absolute;
+	flex-direction: column;
+	white-space: nowrap;
+	background-color: gray;
+	border: 1px solid rgb(100, 100, 100);
+	left: 0;
+	top: 44px;
+}
+
+.drop-down .nav-button {
+	width: 100%;
+	height: 15px;
+	display: flex;
+	padding: 5px 0 5px 0;
+	padding: 15px;
+	text-align: left;
+	align-items: center;
+	border: 0;
+	float: none;
+	box-sizing: border-box;
+}
+
+.drop-down .drop-down {
+	left: 100%;
+	top: 0px;
+}
+

@@ -1,17 +1,13 @@
-import React, {useState, useEffect} from 'react'
-import TablePage from '../modules/table-page'
+import React from 'react'
+/* import TablePage from '../modules/table-page'
+import mockProduct from '../modules/table-page/mock-api-fetch' */
 import apiUrl from '../services/build-url'
 import fetchData from '../services/fetch-data'
-import {Produto} from '../types'
 
 const url = apiUrl().estoque.produtos.url
-
+const data = fetchData(url)
 
 export default function Produtos(){
-    const [produtos, setProdutos] = useState()
-/* 
-    useEffect = (() => {
-        
-    }, []) */
+    console.log(data)
     return <div></div>
 }

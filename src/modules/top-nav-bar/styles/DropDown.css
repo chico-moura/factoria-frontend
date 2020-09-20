@@ -27,3 +27,8 @@
 	top: 0px;
 }
 
+.align-right .drop-down {
+	left: auto;
+	right: 0;
+}
+

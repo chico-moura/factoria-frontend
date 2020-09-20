@@ -1,7 +1,7 @@
 import React from 'react'
-import './TablePage.css'
+import '../../styles/TablePage.css'
 import Table from './Table'
-import { Produto } from '../../types'
+import { Produto } from 'types'
 
 
 interface TablePageProps {

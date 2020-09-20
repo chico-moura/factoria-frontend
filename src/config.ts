@@ -8,7 +8,7 @@ export const BACKEND_API = {
             contatos: 'contatos',
         },
         usuario: {
-            app_name: 'user',
+            app_name: 'usuario',
         },
     },
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import './Table.css'
-import { Produto } from '../../types'
+import '../../styles/Table.css'
+import { Produto } from 'types'
 
 
 export default function Table(props: Produto[]) {

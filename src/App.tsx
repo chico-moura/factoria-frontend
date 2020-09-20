@@ -1,8 +1,8 @@
 import React from 'react'
-import TopNavBar from './modules/top-nav-bar'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
-import pages from './pages'
+import TopNavBar from 'modules/top-nav-bar'
+import pages from 'pages'
 
 function App() {
   return (

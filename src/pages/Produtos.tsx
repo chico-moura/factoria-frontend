@@ -13,5 +13,11 @@ export default function Produtos(){
     useEffect = (() => {
         
     }, []) */
-    return <div></div>
+    return <TablePage 
+        header='Produtos'
+        buttonRow={[]}
+        tableContent={[]}
+    />
+
+
 }

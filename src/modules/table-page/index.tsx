@@ -1,1 +1,1 @@
-export {default} from './components/main/TablePage'
+export {default} from './components/TablePage'

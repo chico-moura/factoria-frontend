@@ -1,5 +1,5 @@
 import Inicio from './Inicio'
-import Produtos from './Produtos'
+import Produtos from '../modules/views/Produtos'
 import Login from '../modules/login'
 
 const pages = {

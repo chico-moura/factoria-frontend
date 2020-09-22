@@ -10,11 +10,11 @@ export default function TopNavBar() {
             <div className='align-left'>
                 <NavButtonLink to='/' text='INÍCIO'/>
                 <NavButtonDrop text='CADASTROS'>
-                    <NavButtonLink to='/'text='Clientes'/>
+                    <NavButtonLink to='/clientes/'text='Clientes'/>
                     <NavButtonLink to='/'text='Fornecedores' />
                     <NavButtonLink to='/'text='Transportadores'/>
                     <NavButtonDrop text='Produtos...'>
-                        <NavButtonLink to='produtos/' text='Produtos'/>
+                        <NavButtonLink to='/produtos/' text='Produtos'/>
                         <NavButtonLink to='/' text='Categorias' />
                         <NavButtonLink to='/' text='Kits' />
                         <NavButtonLink to='/' text='Receitas'/>

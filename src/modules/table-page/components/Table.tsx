@@ -1,13 +1,12 @@
 import React, { ReactNode } from 'react'
 import '../styles/Table.css'
-import { Produto } from 'types'
+import { ModelFields } from 'enum'
 
 
 interface TableProps {
     data: any[],
-    headers: (keyof Produto)[],
+    headers: (keyof typeof ModelFields)[],
 }
-
 
 export default function Table(props: TableProps) {
     const headerRow = () => tableRow(mapHeaders())
@@ -17,9 +16,9 @@ export default function Table(props: TableProps) {
         <tr>{content}</tr>
 
     const mapHeaders = () => 
-        props.headers.map((header: string) => 
+        props.headers.map((header) => 
             <th key={header}>
-                {header}
+                {ModelFields[header]}
             </th>
         )
     

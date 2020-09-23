@@ -1,9 +1,10 @@
 import React from 'react'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-
 import TopNavBar from 'modules/top-nav-bar'
-import pages from 'pages'
+import Inicio from 'modules/inicio'
+import Login from 'modules/login'
 import views from 'modules/views';
+
 
 function App() {
   return (
@@ -11,10 +12,10 @@ function App() {
       <Router>
         <TopNavBar/>
         <div className='main-div'>
-            <Route path='/' exact component={pages.Inicio}/>
+            <Route path='/' exact component={Inicio}/>
             <Route path='/produtos' exact component={views.Produtos}/>
             <Route path='/clientes' exact component={views.Clientes}/>
-            <Route path='/login' exact component={pages.Login}/>
+            <Route path='/login' exact component={Login}/>
         </div>
       </Router>
     </div>

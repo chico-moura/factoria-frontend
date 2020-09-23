@@ -2,3 +2,11 @@
     display: flexbox;
     width: 100%;
 }
+
+.button-container {
+    display: inline;
+}
+
+.test {
+    align-self: start;
+}

@@ -16,7 +16,6 @@ export default function Produtos(){
 
     return <TablePage 
         title='Produtos'
-        buttonRow={[]}
         tableHeaders={TABLE_HEADERS}
         apiUrl={apiUrl().estoque.produtos.url}
     />

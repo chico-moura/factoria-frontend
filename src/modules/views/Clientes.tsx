@@ -17,7 +17,6 @@ export default function Clientes(){
 
     return <TablePage 
         title='Clientes'
-        buttonRow={[]}
         tableHeaders={TABLE_HEADERS}
         apiUrl={apiUrl().estoque.contatos.url}
     />

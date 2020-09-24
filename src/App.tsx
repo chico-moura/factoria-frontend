@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-import TopNavBar from 'modules/shared/top-nav-bar'
+import TopNavBar from 'modules/top-nav-bar'
 import Inicio from 'modules/inicio'
 import Login from 'modules/login'
 import cadastros from './modules/cadastros'

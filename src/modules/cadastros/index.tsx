@@ -1,5 +1,5 @@
-import Produtos from './produtos/Produtos'
-import Clientes from './Clientes'
+import Produtos from './components/produtos/Produtos'
+import Clientes from './components/Clientes'
 
 const cadastros = {
     Produtos,

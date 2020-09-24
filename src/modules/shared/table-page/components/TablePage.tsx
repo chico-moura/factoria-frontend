@@ -4,7 +4,7 @@ import '../styles/TablePage.css'
 import Table from './Table'
 import { ModelFields } from 'enum'
 import Button from 'modules/shared/button/components/Button'
-import AdicionarProdutoForm from './Adicionar'
+import AdicionarProdutoForm from '../../../cadastros/components/produtos/AdicionarProduto'
 
 
 interface TablePageProps {

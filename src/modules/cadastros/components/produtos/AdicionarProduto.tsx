@@ -2,17 +2,16 @@ import React from 'react'
 import 'modules/shared/AdicionarPopUp.css'
 
 
-interface AdicionarProdutoFormProps {
+export interface AdicionarProdutoProps {
     hide(): void   
 }
 
-
-export default function AdicionarProduto(props: AdicionarProdutoFormProps){
+export default function AdicionarProduto(hide: () => void){
     return (
         <div className='form-container' >
             <div className='header'>
                 <h1>Adicionar produto</h1>
-                <div className='close' onClick={props.hide}>X</div>
+                <div className='close' onClick={hide}>X</div>
             </div>
             <form action=''>
                 <label htmlFor='nome'>Nome</label>

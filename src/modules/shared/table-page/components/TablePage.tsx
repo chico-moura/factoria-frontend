@@ -10,7 +10,7 @@ interface TablePageProps {
     title: string,
     tableHeaders: (keyof typeof ModelFields)[],
     apiUrl: string,
-    adicionarItemPopUp: Function,
+    adicionarItemPopUp(hide: () => void): JSX.Element,
 }
 
 export default function TablePage(props: TablePageProps) {

@@ -19,6 +19,6 @@ export default function Clientes(){
         title='Clientes'
         tableHeaders={TABLE_HEADERS}
         apiUrl={apiUrl().estoque.contatos.url}
-        adicionarItemPopUp={() => null}
+        adicionarItemPopUp={() => <div/>}
     />
 }

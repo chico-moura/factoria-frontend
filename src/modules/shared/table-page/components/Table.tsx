@@ -34,8 +34,10 @@ export default function Table(props: TableProps) {
 
     return (
         <table>
-            {headerRow()}
-            {tableBody()}
+            <tbody>
+                {headerRow()}
+                {tableBody()}
+            </tbody>
         </table>
     )
 }

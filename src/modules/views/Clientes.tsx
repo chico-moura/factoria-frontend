@@ -1,5 +1,5 @@
 import React from 'react'
-import TablePage from 'modules/table-page'
+import TablePage from 'modules/shared/table-page'
 import apiUrl from 'services/build-url'
 import { ModelFields } from 'enum'
 

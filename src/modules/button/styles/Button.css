@@ -8,25 +8,26 @@
     border: 1px solid #b5b5b5
 }
 
-.adicionar {
-    background-color: green;
-}
-
-.remover {
-    background-color: darkred;
-}
-
 .button:hover {
     cursor: pointer;
 }
 
-.adicionar:hover {
+.green {
+    background-color: green;
+}
+
+.green:hover {
     background-color: #32a646;
 }
 
-.remover:hover {
-    background-color: red;
+.red {
+    background-color: darkred;
 }
+
+.red:hover {
+    background-color: #cc0000;
+}
+
 
 .addform {
     display: none;

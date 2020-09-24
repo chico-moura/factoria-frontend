@@ -3,8 +3,7 @@ import fetchData from 'services/fetch-data'
 import '../styles/TablePage.css'
 import Table from './Table'
 import { ModelFields } from 'enum'
-import ButtonAdicionar from 'modules/button/components/ButtonAdicionar'
-import ButtonRemover from 'modules/button/components/ButtonRemover'
+import Button from 'modules/button/components/Button'
 import AdicionarProdutoForm from './Adicionar'
 
 
@@ -41,9 +40,9 @@ export default function TablePage(props: TablePageProps){
     return(
         <div className='table-page'>
             <h1>{props.title}</h1>
-            <ButtonAdicionar activate={toggleAdicionar().show}/>
+            <Button text='ADICIONAR' color='green' activate={toggleAdicionar().show}/>
             {adicionarPopUp()}
-            <ButtonRemover/>
+            <Button text='REMOVER' color='red' activate={() => null}/>
             <hr/>
             <Table 
                 headers={props.tableHeaders}

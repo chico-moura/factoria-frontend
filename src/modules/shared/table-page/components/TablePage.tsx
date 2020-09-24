@@ -3,7 +3,7 @@ import fetchData from 'services/fetch-data'
 import '../styles/TablePage.css'
 import Table from './Table'
 import { ModelFields } from 'enum'
-import Button from 'modules/button/components/Button'
+import Button from 'modules/shared/button/components/Button'
 import AdicionarProdutoForm from './Adicionar'
 
 
@@ -18,10 +18,15 @@ export default function TablePage(props: TablePageProps){
     const [items, setItems] = useState<any[]>([])
     const [adicionarVisible, setAdicionarVisible] = useState(false)
 
-    const fetchItems = async () => {
-        await fetchData(props.apiUrl).then(data => setItems(data))
-    }
-    useEffect(() => {fetchItems()}, [])
+
+    useEffect(() => {
+        const fetchItems = async () => {
+            await fetchData(props.apiUrl).then(data => setItems(data))
+        }
+        fetchItems()
+    }, [props.apiUrl])
+
+
 
     const toggleAdicionar = () => {
         const toggle = (bool: boolean) => setAdicionarVisible(bool)

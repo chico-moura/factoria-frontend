@@ -1,4 +1,4 @@
-import { BACKEND_API } from '../config' 
+import { BACKEND_API } from 'api_config' 
 
 export default function apiUrl() {
     const base_url = concat_url(BACKEND_API.backend_base_url, BACKEND_API.api_version)

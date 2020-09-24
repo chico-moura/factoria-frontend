@@ -4,17 +4,16 @@ import '../styles/TablePage.css'
 import Table from './Table'
 import { ModelFields } from 'enum'
 import Button from 'modules/shared/button/components/Button'
-import AdicionarProdutoForm from '../../../cadastros/components/produtos/AdicionarProduto'
 
 
 interface TablePageProps {
     title: string,
     tableHeaders: (keyof typeof ModelFields)[],
-    apiUrl: string
-
+    apiUrl: string,
+    adicionarItemPopUp: Function,
 }
 
-export default function TablePage(props: TablePageProps){
+export default function TablePage(props: TablePageProps) {
     const [items, setItems] = useState<any[]>([])
     const [adicionarVisible, setAdicionarVisible] = useState(false)
 
@@ -27,7 +26,6 @@ export default function TablePage(props: TablePageProps){
     }, [props.apiUrl])
 
 
-
     const toggleAdicionar = () => {
         const toggle = (bool: boolean) => setAdicionarVisible(bool)
         return {
@@ -37,8 +35,8 @@ export default function TablePage(props: TablePageProps){
     }
 
     const adicionarPopUp = () => {
-        if (adicionarVisible){
-            return <AdicionarProdutoForm hide={toggleAdicionar().hide}/>
+        if (adicionarVisible) {
+            return props.adicionarItemPopUp(toggleAdicionar().hide)
         }
     }
 

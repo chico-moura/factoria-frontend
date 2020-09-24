@@ -7,7 +7,7 @@ interface AdicionarProdutoFormProps {
 }
 
 
-export default function AdicionarProdutoForm(props: AdicionarProdutoFormProps){
+export default function AdicionarProduto(props: AdicionarProdutoFormProps){
     return (
         <div className='form-container' >
             <div className='header'>

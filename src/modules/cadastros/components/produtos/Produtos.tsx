@@ -2,6 +2,7 @@ import React from 'react'
 import TablePage from 'modules/shared/table-page'
 import apiUrl from 'services/build-url'
 import { ModelFields } from 'enum'
+import AdicionarProduto from 'modules/cadastros/components/produtos/AdicionarProduto'
 
 
 const TABLE_HEADERS: (keyof typeof ModelFields)[] = [
@@ -18,5 +19,6 @@ export default function Produtos(){
         title='Produtos'
         tableHeaders={TABLE_HEADERS}
         apiUrl={apiUrl().estoque.produtos.url}
+        adicionarItemPopUp={AdicionarProduto}
     />
 }

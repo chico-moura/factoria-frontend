@@ -9,13 +9,13 @@ interface TableProps {
 }
 
 export default function Table(props: TableProps) {
-    const headerRow = () => tableRow(mapHeaders(), 'header')
+    const tableHead = () => row(makeHeaders(), 'table-header')
     const tableBody = () => makeBody()
 
-    const tableRow = (content: ReactNode[], key: string) => 
+    const row = (content: ReactNode[], key: string) => 
         <tr key={key}>{content}</tr>
 
-    const mapHeaders = () => 
+    const makeHeaders = () => 
         props.headers.map((header) => 
             <th key={header}>
                 {ModelFields[header]}
@@ -27,12 +27,10 @@ export default function Table(props: TableProps) {
         return props.data.map(item => {
             let key = 'datarow-' + count.toString()
             count ++
-            return tableRow(mapAttributes(item), key)
+            return row(makeCell(item), key)
         })
-    }
-
-    
-    const mapAttributes = (item: any) => 
+    }   
+    const makeCell = (item: any) => 
         props.headers.map(attr => 
             <td key={attr}>{item[attr]}</td>
         )
@@ -40,7 +38,7 @@ export default function Table(props: TableProps) {
     return (
         <table>
             <tbody>
-                {headerRow()}
+                {tableHead()}
                 {tableBody()}
             </tbody>
         </table>

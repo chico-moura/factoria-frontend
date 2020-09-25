@@ -48,19 +48,23 @@ label {
 
 .columns-container {
     display: flex;
+    flex-direction: row;
+    justify-content: start;
+
 }
 
 .column {
     padding: 1em;
-    align-self: stretch;
+    display: inline-block;
     padding-bottom: 0;
+    
 }
 
-.radius-container {
+.checkbox-container {
     display: flex;
 }
 
-.radius-container input {
+.checkbox-container input {
     width: auto;
     margin-right: 0.5em;
     display: inline-block;

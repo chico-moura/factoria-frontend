@@ -38,7 +38,7 @@
 input {
     display: block;
     width: 100%;
-    margin: 0.2em 0 0 0;
+    margin: 0.1em 0 0.5em 0;
     padding: 0;
 }
 
@@ -46,7 +46,7 @@ label {
     display: inline;
 }
 
-.center {
+.columns-container {
     display: flex;
 }
 
@@ -56,20 +56,21 @@ label {
     padding-bottom: 0;
 }
 
-.radius {
+.radius-container {
     display: flex;
 }
 
-.radius input {
+.radius-container input {
     width: auto;
     margin-right: 0.5em;
+    display: inline-block;
 }
 
-.obs {
+.obs-container {
     padding: 0em 1em 0em 1em;
 }
 
-.obs input {
+.obs-container input {
     height: 8em;
 }
 
